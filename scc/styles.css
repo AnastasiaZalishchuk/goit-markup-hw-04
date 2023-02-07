@@ -123,9 +123,11 @@ img {
     url(../img/hero/people-office\ 1.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px 600px;
+  background-size: cover;
+  max-width: 1440px;
   padding: 188px 0;
   text-align: center;
+  margin: 0 auto;
 }
 .hero-main-title {
   font-weight: 700;
@@ -271,37 +273,39 @@ img {
   color: var(--color-grey);
   margin-bottom: 72px;
 }
-
-.customers-list {
-  display: flex;
-  align-items: center;
-  column-gap: 24px;
+.customers-item {
+  width: 168px;
 }
-.customers-icon {
-  color: var(--color-light-slate);
-}
-
-.customers-item:hover,
-.customers-item:focus {
-  background-color: var(--color-ocean);
-  color: var(--color-white);
-}
-
-.container-customers {
+.customers-link {
   display: flex;
   justify-content: center;
   align-items: center;
   border: 1px solid #8e8f99;
-  border-radius: 4px;
-  width: 168px;
+  border-radius: 10px;
   height: 88px;
+  width: 100%;
+  fill: var(--color-light-slate);
+}
+
+.customers-list {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 24px;
+}
+
+.customers-link:hover,
+.customers-link:focus {
+  background-color: var(--color-ocean);
+  border: 1px solid var(--color-ocean);
+  fill: var(--color-white);
 }
 
 /* FOOTER */
 
 .footer {
   background: var(--color-navy-blue-modal);
-  padding: 100px;
+  padding: 100px 0px;
 }
 
 .footer-logo {
@@ -323,9 +327,9 @@ img {
   height: 72px;
   margin-top: 16px;
 }
-.footer-social-container {
+.footer-container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
 }
 
 .footer-social-title {
@@ -334,15 +338,16 @@ img {
   line-height: calc(24 / 16);
   letter-spacing: 0.02em;
   color: var(--color-white);
-  text-transform: uppercase;
+  margin-bottom: 16px;
 }
 
 .footer-social-list {
   display: flex;
   align-items: baseline;
   justify-content: center;
+  column-gap: 16px;
 }
-.footer-social-item {
+.footer-social-link {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -350,6 +355,9 @@ img {
   height: 40px;
   border-radius: 50%;
   background-color: rgba(255, 255, 255, 0.1);
+}
+.footer-wrapper {
+  margin-right: 120px;
 }
 /* portfolio */
 
