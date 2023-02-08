@@ -297,7 +297,6 @@ img {
 .customers-link:hover,
 .customers-link:focus {
   border: 1px solid var(--color-ocean);
-  fill: var(--color-white);
 }
 .customers-icon:hover,
 .customers-icon:focus {
